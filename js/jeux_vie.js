@@ -394,27 +394,25 @@ btn_Stoper.addEventListener("click", () =>{
 window.onload = Aujourdhui();
 
 //setTimeout( function(){ self.location.reload()}, 1000)
-// function Go() {
-  
-//     console.log("etape :" +1)
-    
-// }
+function wait(ms)
+{
+var d = new Date();
+var d2 = null;
+do { d2 = new Date(); }
+while(d2-d < ms);
+}
 
- btn_Lancer.addEventListener("click", () =>{  
-  
+
+ btn_Lancer.addEventListener("click", () =>{    
    
-
     //Canvasation();
     for(let i =0; i<50; i++){
-      // setInterval(1000)
-      //Canvasation();
-      SVGPathSegClosePath()
-       setInterval( Canvasation(), 1000)
-     
+      wait(200)
+      Canvasation()    ;
     }
    
     
-    pinceau.stroke();
+    // pinceau.stroke();
   
         
     
