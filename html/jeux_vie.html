@@ -10,13 +10,35 @@
 
 
 <body>
-<<<<<<< HEAD
-    <canvas id="mon_Canvas" width="800" height="800" style="border:5px solid black;"> </canvas>    
-=======
-    <canvas id="mon_Canvas" width="400" height="400" style="border:5px solid black;"> </canvas>    
->>>>>>> cede6f1d1e58c7681f99d79ac34ce822e7f9e0c9
-    <button type="button"  id="Monbtn"> Lancer </button>  
-    <button type="button"  id="btn_Stop"> Regenerer </button>  
+    <article>
+
+            <canvas id="mon_Canvas" width="800" height="800" style="border:5px solid black;"> </canvas>    
+            <span>largeur:</span>
+            <select name="select_Largeur" id="Ma_largeur">
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="800">800</option>
+                <option value="1000">1000</option>
+            </select>
+            <span>hauteur:</span>
+
+            <select name="select_Hauteureur" id="Ma_Hauteur">
+                    <option value="200">200</option>
+                    <option value="400">400</option>
+                    <option value="800">800</option>
+                    <option value="1000">1000</option>
+                </select>
+               <button id="ok">ok</button>
+            
+          
+            <footer>               
+                   <button type="button"  id="Monbtn"> Lancer </button>  
+                 <button type="button"  id="btn_Stop"> Regenerer </button>   
+            </footer>
+
+    </article>
+    
+
     
     <script src="../js/jeux_Vie.js"></script>
 </body>
